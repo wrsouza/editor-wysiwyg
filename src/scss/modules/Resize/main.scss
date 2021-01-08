@@ -1,0 +1,65 @@
+.fbs-editor-resize-image {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  user-select: none;
+  z-index: 99;
+
+  &.active {
+    display: block;
+  }
+
+  &-box {
+    position: absolute;
+    top: 0;
+    left: 0;
+    outline: 2px solid #c70000;
+    background: rgba(150, 0, 0, 0.5);
+    /* outline: 2px solid #06c; */
+    /* background: rgba(0, 0, 150, 0.3); */
+    cursor: pointer;
+    user-select: none;
+
+    &-tl,
+    &-tr,
+    &-bl,
+    &-br {
+      position: absolute;
+      width: 10px;
+      height: 10px;
+      /* outline: 2px solid #06c; */
+      outline: 2px solid #c70000;
+      background: #ffffff;
+      user-select: none;
+    }
+    &-tl,
+    &-bl {
+      left: 0;
+      margin-left: -6px;
+    }
+    &-tr,
+    &-br {
+      right: 0;
+      margin-right: -6px;
+    }
+    &-tl,
+    &-tr {
+      top: 0;
+      margin-top: -5px;
+    }
+    &-bl,
+    &-br {
+      bottom: 0;
+      margin-bottom: -5px;
+    }
+    &-tl,
+    &-br {
+      cursor: nwse-resize;
+    }
+    &-tr,
+    &-bl {
+      cursor: nesw-resize;
+    }
+  }
+}

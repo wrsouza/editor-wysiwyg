@@ -1,0 +1,41 @@
+.fbs-editor {
+  font-family: $fontBase;
+  font-weight: $fontWeight;
+  font-size: $fontSize;
+  color: $textColor;
+  border: 1px solid $borderColor;
+  box-sizing: border-box;
+  min-height: 300px;
+  height: 100%;
+
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  button {
+    cursor: pointer;
+  }
+
+  img {
+    display: inline-block;
+    max-width: 100%;
+    cursor: pointer;
+  }
+
+  &-container {
+    position: relative;
+    width: 100%;
+    height: calc(100% - 50px);
+    border-top: 1px solid $borderColor;
+    overflow: auto;
+  }
+
+  &-view {
+    position: relative;
+    padding: 10px;
+    border: none;
+    outline: none;
+  }
+}

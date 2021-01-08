@@ -1,0 +1,50 @@
+.fbs-editor-bar-item-button {
+  float: left;
+  position: relative;
+  margin: 4px 1px;
+  padding: 0;
+  min-width: 34px;
+  height: 34px;
+  font-size: 14px;
+  color: inherit;
+  outline: none;
+  border: none;
+  line-height: 1;
+  border-radius: 3px;
+  background: transparent;
+  user-select: none;
+  transition: background 0.2s ease 0s;
+  cursor: pointer;
+
+  &:active,
+  &:visited,
+  &:focus,
+  &:hover {
+    outline: none;
+    border: none;
+  }
+
+  svg {
+    fill: #576271;
+  }
+
+  &.active {
+    background: #ebebeb;
+
+    svg {
+      fill: #06c;
+    }
+  }
+
+  i {
+    text-align: center;
+  }
+
+  &:hover {
+    background: #ebebeb;
+
+    .fbs-editor-bar-item-tooltip {
+      display: block;
+    }
+  }
+}

@@ -1,0 +1,22 @@
+.fbs-editor-bar {
+  position: relative;
+  display: block;
+  padding: 4px;
+  background: #fff;
+  border-bottom: 1px solid $borderColor;
+  user-select: none;
+
+  &-container {
+    display: table;
+    margin: 0 auto;
+    user-select: none;
+  }
+
+  &-item-group {
+    float: left;
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+    user-select: none;
+  }
+}

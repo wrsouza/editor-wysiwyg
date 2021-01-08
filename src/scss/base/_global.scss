@@ -1,0 +1,18 @@
+html,
+body {
+  height: 100%;
+}
+
+body {
+  font-family: $fontBase;
+  font-weight: $fontWeight;
+  font-size: $fontSize;
+  color: $textColor;
+  -webkit-font-smoothing: antialised;
+  overflow: hidden;
+}
+
+blockquote {
+  display: block;
+  padding: 20px;
+}
